@@ -12,11 +12,11 @@ var each = require('co-each');
 var fs = require('fs');
 var co = require('co');
 
-var files = [
-  'index.js', 'README.md'
-];
-
 co(function* () {
+  var files = [
+    'index.js', 'README.md'
+  ];
+
   yield each(files, backup);
 });
 
