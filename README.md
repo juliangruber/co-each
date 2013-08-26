@@ -3,6 +3,8 @@
 
 Parallel forEach for generators.
 
+[![build status](https://secure.travis-ci.org/juliangruber/co-each.png)](http://travis-ci.org/juliangruber/co-each)
+
 ## Example
 
 Backup some files:
