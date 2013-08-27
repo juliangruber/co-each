@@ -9,7 +9,7 @@ module.exports = each;
  */
 
 function each(arr, fn) {
-  return arr.map(function(x) {
-    return fn(x);
+  return arr.map(function(el, i, all) {
+    return fn(el, i, all);
   });
 }

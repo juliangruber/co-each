@@ -4,8 +4,22 @@ var each = require('./');
 var co = require('co');
 var fs = require('fs');
 
+test('args', function(t) {
+  co(function*() {
+    t.plan(9);
+    var arr = [0, 1, 2];
+    var i = 0;
+    yield each(arr, function*(el, j, all) {
+      t.equal(el, i);
+      t.equal(j, i);
+      t.deepEqual(all, arr);
+      i++;
+    });
+  });
+});
+
 test('backup', function(t) {
-  co(function* () {
+  co(function*() {
     t.plan(2);
 
     var files = [

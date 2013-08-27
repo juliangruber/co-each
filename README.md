@@ -37,8 +37,14 @@ function backup(path) {
 
 ### each(arr, fn)
 
-For each element in the Array `arr`, call the generator `fn` with it and yield
-when all are done. Functions are being executed in parallel.
+For each element in the Array `arr`, call the generator `fn` with
+
+* the element
+* the current index
+* the whole array
+
+as in `Array#forEach` and yield when all are done. Functions are being executed
+in parallel.
 
 ## Installation
 
