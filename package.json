@@ -13,8 +13,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "~1.0.4",
-    "co": "~1.5.1"
+    "tape": "~4.6.2",
+    "co": "~4.6.0"
   },
   "keywords": [
     "foreach",
